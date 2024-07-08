@@ -19,12 +19,3 @@ This portfolio website serves as a digital resume, displaying my projects, skill
 
 - **HTML**
 - **CSS**
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-   ```sh
-   https://github.com/AYUSHI26-02/Portfolio-Website
-   ```
