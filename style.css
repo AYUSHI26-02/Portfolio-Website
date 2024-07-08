@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    color: white;
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #101010;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    height: 90px;
+    width: 80px;
+    line-height: 80px;
+}
+
+.links {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 25%;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+.links a:hover {
+    text-shadow: 1px 1px 2px rgb(63, 53, 59), 0 0 1em rgb(180, 127, 160), 0 0 0.2em rgb(155, 38, 128);
+    color: #000;
+}
+
+.home {
+    height: 87vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-img img {
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgb(63, 53, 59), 0 0 1em rgb(245, 197, 233), 0 0 0.2em rgb(145, 31, 118);
+}
+
+.my-self {
+    width: 30%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: system-ui;
+}
+
+.my-self span {
+    color: #7d0c52;
+    font-weight: 900;
+}
+
+.my-self p {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+button {
+    padding: .7rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 2px;
+    background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    border: 1px solid #7d0c52;
+    box-shadow: 0 4px 8px 0 rgba(168, 140, 165, 0.2), 0 6px 20px 0 rgba(154, 108, 145, 0.19);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background: #3d0025;
+    border: 1px solid #fff;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    height: 85vh;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.img-2 img {
+    height: 400px;
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.3);
+    align-items: center;
+}
+
+.about {
+    font-size: 1rem;
+    width: 50%;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.about h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    color: #898c90;
+}
+
+.my-self-1 {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    gap: 7%;
+}
+
+.box {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.box li {
+    list-style: none;
+    width: 100%;
+    padding: .2rem;
+}
+
+.box li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: .1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    position: static;
+}
+
+label::after {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.box .display {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.box .display h4 {
+    color: #912969;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: .7rem;
+}
+
+.box .display p,
+sup {
+    color: #898c90;
+    margin-top: .2rem;
+}
+
+.box input[type="radio"]:checked+label+.display {
+    max-height: 600px;
+    padding: .7rem;
+}
+
+.box input[type="radio"]:checked+label {
+    text-decoration: underline 1.5px #95035d;
+}
+
+.projects {
+    height: 100vh;
+    font-size: 1rem;
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.project-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 7rem;
+}
+
+.pro-box {
+    border-radius: .5rem;
+    margin: .5rem;
+    position: relative;
+    width: 30%;
+}
+
+.pro-box img {
+    border-radius: .5rem;
+    height: 200px;
+    width: 100%;
+    margin: .5rem;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.overlay {
+    border-radius: .5rem;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #7d0c52);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    margin-left: .5rem;
+    transition: height 0.5s;
+}
+
+.overlay h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: .7rem;
+    font-weight: normal;
+}
+
+.pro-box:hover .overlay {
+    height: 100%;
+}
+
+#pro-btn {
+    text-align: center;
+}
+
+.contat-me {
+    height: 100vh;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 19%;
+    padding-right: 7rem;
+    padding-left: 7rem;
+}
+
+.contat-me h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.con1 {
+    margin-top: 1rem;
+}
+
+.con1 i {
+    color: #7d0c52;
+    font-size: 1.25rem;
+}
+
+.con1 a {
+    padding-left: 1rem;
+    font-size: .9rem;
+}
+
+.link-contact a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.link-contact a:hover {
+    color: #7d0c52;
+    transform: scale(1.5);
+}
+
+#fill-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: none;
+}
