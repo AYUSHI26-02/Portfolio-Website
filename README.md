@@ -2,7 +2,7 @@ Here's a template for a README file for a portfolio website:
 
 # My Portfolio Website
 
-Welcome to my portfolio website! This site showcases my work, skills, and experience. Below you will find all the necessary information about the structure, technologies used, and how to run the project locally.
+Welcome to my portfolio website! This site showcases my work, skills, and experience.
 
 ## Overview
 
