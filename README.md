@@ -19,3 +19,9 @@ This portfolio website serves as a digital resume, displaying my projects, skill
 
 - **HTML**
 - **CSS**
+
+## Contact
+
+LinkedIn: https://www.linkedin.com/in/ayushi-patel-71ab112b3
+
+Thank you for using this Portfolio Website.
